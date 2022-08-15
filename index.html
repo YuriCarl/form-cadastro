@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Formulário de Cadastro</title>
+</head>
+<body>
+  <div id="container">  <!-- Início do Container -->
+
+    <div class="img-form">  <!-- Início imagem formúlario -->
+      <img src="imgs/form-img.svg">
+    </div>  <!-- Fim da imagem formúlario -->
+
+    <div id="form"> <!-- Início do Formulário -->
+      <form action="#">
+
+        <div id="form-header">  <!-- Início do cabeçalho do formulário -->
+          <div class="titulo">
+            <h1>Cadastre-se</h1>
+          </div>
+          <div class="login-button">
+            <button><a href="#">Login</a></button>
+          </div>
+        </div>  <!-- Fim do cabeçalho do formulário -->
+
+        <div id="inputs">  <!-- Início dos inputs de formulário -->
+          <div class="input-box">
+            <label for="firstname">Primeiro nome:</label>  <!-- input de primeiro nome -->
+            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required> 
+          </div>
+
+          <div class="input-box">
+            <label for="lastname">Sobrenome:</label>  <!-- input de sobrenome -->
+            <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required> 
+          </div>
+
+          <div class="input-box">
+            <label for="email">E-mail:</label>  <!-- input de e-mail -->
+            <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+          </div>
+
+          <div class="input-box"> <!-- input de numero -->
+            <label for="number">Celular:</label>
+            <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+          </div>
+
+          <div class="input-box">  <!-- input de senha -->
+            <label for="password">Senha:</label>
+            <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+          </div>
+
+          <div class="input-box">  <!-- input de confirme sua senha -->
+            <label for="confirm-password">Confirmar senha:</label>
+            <input id="confirm-password" type="password" name="confirm-password" placeholder="Confirme sua senha" required>
+          </div>
+        </div>  <!-- Fim dos inputs de formulário -->
+
+        <div id="gender-iputs">  <!-- Início dos inputs de gênero -->
+          <div class="gender-title">  <!-- Início do título de gênero -->
+            <h6>Gênero</h6>
+          </div>    
+
+          <div id="gender-group">   <!-- Início do grupo de gênero -->
+
+            <div class="gender-input">   <!-- input masculino -->
+              <input type="radio" id="male" name="gender">
+              <label for="male">Masculino</label>
+            </div>
+
+            <div class="gender-input">  <!-- input feminino -->
+              <input type="radio" id="female" name="gender">
+              <label for="female">Feminino</label>
+            </div>
+
+            <div class="gender-input">  <!-- input outros -->
+              <input type="radio" id="others" name="gender">
+              <label for="others">Outros</label>
+            </div>
+
+          </div>  <!-- Fim do grupo de gênero -->
+        </div>  <!-- Fim dos inputs de gênero -->
+
+        <div id="continue-button">
+          <button><a href="#">Continuar</a></button>
+        </div>
+
+      </form>
+    </div>  <!-- Fim do Formulário -->
+
+  </div>  <!-- Fim do Container -->
+</body>
+</html>

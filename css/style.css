@@ -1,0 +1,224 @@
+ /* cor da imgagem 5554B4 */
+/* Importando fonte */
+ @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+/* Configurações padrões */
+* {   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5554B4;
+}
+
+/* Configurações do container */
+#container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+/* Configurações do imagem */
+.img-form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0ece2;
+  padding: 1rem;
+}
+
+.img-form img {
+  width: 31rem;
+}
+
+/* Configurações do formulário cabeçalho */
+#form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 3rem;
+}
+
+#form-header {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#form-header h1::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #5554B4;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+/* Configurações do formulário botão */
+.login-button {
+  display: flex;
+  align-items: center;
+}
+
+.login-button button {
+  border: none;
+  background-color: #5554B4;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button button a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}
+
+.login-button button:hover {
+  background-color: #1c1a7c;
+}
+
+/* Configurações do formulário inputs */
+#inputs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.input-box input {
+  border: none;
+  border-bottom: 1px solid #5554B4;
+  padding: 0.8rem 1.2rem;
+  margin: 0.6rem 0;
+  font-size: 0.8rem;
+  color: #000000;
+  background-color: #fff;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.181);
+  border-radius: 4px;
+}
+
+.input-box input:hover {
+  background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+  outline: 1px solid #5554B4;
+}
+
+.input-box label,
+.gender-title h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+/* Configurações do formulário inputs generos */
+#gender-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.62rem;
+  padding: 0 0.5rem;
+}
+
+.gender-iput {
+  display: flex;
+  align-items: center;
+}
+
+.gender-iput input {
+  margin-right: 0.35rem;
+}
+
+.gender-iput label {
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+/* Configurações botão do formulário inputs generos */
+#continue-button button {
+  width: 100%;
+  margin-top: 2.5rem;
+  border: none;
+  background-color: #5554B4;
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#continue-button button:hover {
+  background-color: #1c1a7c;
+}
+
+#continue-button button a {
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Configurações de responsividade */
+@media screen and (max-width: 1330px) {
+  .img-form {
+      display: none;
+  }
+  #container {
+      width: 50%;
+  }
+  #form {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 1064px) {
+  #container {
+      width: 90%;
+      height: auto;
+  }
+  #inputs {
+      flex-direction: column;
+      z-index: 5;
+      padding-right: 5rem;
+      max-height: 10rem;
+      overflow-y: scroll;
+      flex-wrap: nowrap;
+  }
+  .gender-inputs {
+      margin-top: 2rem;
+  }
+  .gender-group {
+      flex-direction: column;
+  }
+  .gender-title h6 {
+      margin: 0;
+  }
+  .gender-input {
+      margin-top: 0.5rem;
+  }
+}
